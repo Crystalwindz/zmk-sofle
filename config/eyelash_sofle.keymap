@@ -38,7 +38,7 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_BIG_L_BRACKET {
+        combo_big_l_bracket {
             bindings = <&kp LS(LEFT_BRACKET)>;
             key-positions = <17 18>;
         };
