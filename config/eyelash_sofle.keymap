@@ -4,6 +4,7 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -75,11 +76,11 @@
 
         SYSTEM {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none       &none       &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&bt BT_PRV  &bt BT_NXT  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none       &none       &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none       &none       &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none       &none       &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
