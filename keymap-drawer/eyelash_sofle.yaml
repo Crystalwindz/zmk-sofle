@@ -261,6 +261,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
+- p: [4, 5]
+  k: {h: '-', s: _}
+  l: [QWERTY]
+- p: [7, 8]
+  k: Sft+-
+  l: [QWERTY]
 - p: [17, 18]
   k: Sft+[
   l: [QWERTY]
@@ -278,10 +284,4 @@ combos:
   l: [QWERTY]
 - p: [46, 47]
   k: )
-  l: [QWERTY]
-- p: [4, 5]
-  k: {h: '-', s: _}
-  l: [QWERTY]
-- p: [7, 8]
-  k: Sft+-
   l: [QWERTY]
