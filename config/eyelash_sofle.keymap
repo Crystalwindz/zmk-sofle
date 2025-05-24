@@ -38,42 +38,42 @@
     combos {
         compatible = "zmk,combos";
 
-        COM_BIG_L_BRACKET {
+        combo_BIG_L_BRACKET {
             bindings = <&kp LS(LEFT_BRACKET)>;
             key-positions = <17 18>;
         };
 
-        COM_BIG_R_BRACKET {
+        combo_big_r_bracket {
             bindings = <&kp RS(RIGHT_BRACKET)>;
             key-positions = <20 21>;
         };
 
-        COM_MID_L_BRACKET {
+        combo_mid_l_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <30 31>;
         };
 
-        COM_MID_R_BRACKET {
+        combo_mid_r_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <33 34>;
         };
 
-        COM_SMALL_L_BRACKET {
+        combo_small_l_bracket {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <43 44>;
         };
 
-        COM_SMALL_R_BRACKET {
+        combo_small_r_bracket {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <46 47>;
         };
 
-        COMBO_MINUS {
+        combo_minus {
             bindings = <&kp MINUS>;
             key-positions = <4 5>;
         };
 
-        COM_UNDERSCORE {
+        combo_underscore {
             bindings = <&kp RS(MINUS)>;
             key-positions = <7 8>;
         };
@@ -132,7 +132,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        COND_MO_1_2_TO_3 {
+        cond_mo_1_2_to_3 {
             if-layers = <1 2>;
             then-layer = <3>;
         };
