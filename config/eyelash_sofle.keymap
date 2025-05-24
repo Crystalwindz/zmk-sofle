@@ -51,17 +51,17 @@
 
         NUMBER {
             bindings = <
-&kp F1     &kp F2  &kp F3     &kp F4    &kp F5     &kp F6    &mmv MOVE_UP     &kp F7  &kp F8           &kp F9           &kp F10          &kp F11          &kp F12
-&none      &none   &mkp RCLK  &kp UP    &mkp LCLK  &none     &mmv MOVE_DOWN   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_MINUS
-&none      &none   &kp LEFT   &kp DOWN  &kp RIGHT  &none     &mmv MOVE_LEFT   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE
-&none      &none   &none      &none     &none      &none     &mmv MOVE_RIGHT  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none            &none
-&mkp MCLK  &none   &none      &none     &none      &none     &mkp LCLK        &none   &none            &kp KP_NUMBER_0  &none            &none
+&kp F1     &kp F2         &kp F3     &kp F4    &kp F5     &kp F6    &mmv MOVE_UP     &kp F7  &kp F8           &kp F9           &kp F10          &kp F11           &kp F12
+&kp HOME   &kp PAGE_UP    &mkp RCLK  &kp UP    &mkp LCLK  &none     &mmv MOVE_DOWN   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS         &kp EQUAL
+&kp END    &kp PAGE_DOWN  &kp LEFT   &kp DOWN  &kp RIGHT  &none     &mmv MOVE_LEFT   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none      &none          &none      &none     &none      &none     &mmv MOVE_RIGHT  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none             &none
+&mkp MCLK  &none          &none      &none     &none      &none     &mkp LCLK        &none   &none            &kp KP_NUMBER_0  &kp KP_DOT       &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
-        SYMBOL {
+        CONTROL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -75,14 +75,23 @@
 
         SYSTEM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        N_C_TO_S {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
