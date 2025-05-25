@@ -123,9 +123,9 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - Ins
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {type: held}
+  - {t: NUMBER, type: held}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - CONTROL
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP 0
   - KP DOT
@@ -188,9 +188,9 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - Ins
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: NUMBER, type: held alternate}
   - $$mdi:mouse-left-click-outline$$
-  - {type: held}
+  - {t: CONTROL, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP 0
   - KP DOT
