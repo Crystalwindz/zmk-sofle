@@ -122,11 +122,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:backspace-reverse-outline$$
   - Ins
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-space$$
   - {t: NUM, type: held}
   - $$mdi:mouse-left-click-outline$$
   - CTL
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - KP 0
   - KP DOT
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -187,11 +187,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:backspace-reverse-outline$$
   - Ins
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-space$$
   - {t: NUM, type: held alternate}
   - $$mdi:mouse-left-click-outline$$
   - {t: CTL, type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - KP 0
   - KP DOT
   - {t: '$$mdi:minus-circle-outline$$', type: none}
