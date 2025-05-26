@@ -16,9 +16,15 @@
     time-to-max-speed-ms = <50>;       // 300 
 };
 
-&lt { flavor = "hold-preferred"; };
+&lt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <250>;
+};
 
-&mt { quick-tap-ms = <150>; };
+&mt {
+    quick-tap-ms = <200>;
+    tapping-term-ms = <250>;
+};
 
 &mmv {
 };
