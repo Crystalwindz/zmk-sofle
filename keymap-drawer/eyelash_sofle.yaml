@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  QWERTY:
+  QWE:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -57,15 +57,15 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-esc$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-esc$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-tab$$', h: CONTROL}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: CTL}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  NUMBER:
+  NUM:
   - F1
   - F2
   - F3
@@ -97,9 +97,9 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'Ctl+[', s: 'Ctl+{'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'Ctl+]', s: 'Ctl+}'}
   - KP 4
   - KP 5
   - KP 6
@@ -122,15 +122,15 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:backspace-reverse-outline$$
   - Ins
+  - {t: NUM, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: NUMBER, type: held}
   - $$mdi:mouse-left-click-outline$$
-  - CONTROL
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - CTL
   - KP 0
   - KP DOT
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  CONTROL:
+  CTL:
   - F1
   - F2
   - F3
@@ -162,9 +162,9 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'Ctl+[', s: 'Ctl+{'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'Ctl+]', s: 'Ctl+}'}
   - KP 4
   - KP 5
   - KP 6
@@ -187,15 +187,15 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:backspace-reverse-outline$$
   - Ins
+  - {t: NUM, type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: NUMBER, type: held alternate}
   - $$mdi:mouse-left-click-outline$$
-  - {t: CONTROL, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: CTL, type: held}
   - KP 0
   - KP DOT
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  SYSTEM:
+  SYS:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -252,36 +252,36 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [4, 5]
   k: {h: '-', s: _}
-  l: [QWERTY]
+  l: [QWE]
 - p: [7, 8]
   k: Sft+-
-  l: [QWERTY]
+  l: [QWE]
 - p: [17, 18]
   k: Sft+[
-  l: [QWERTY]
+  l: [QWE]
 - p: [20, 21]
   k: Sft+]
-  l: [QWERTY]
+  l: [QWE]
 - p: [30, 31]
   k: {t: '[', s: '{'}
-  l: [QWERTY]
+  l: [QWE]
 - p: [33, 34]
   k: {t: ']', s: '}'}
-  l: [QWERTY]
+  l: [QWE]
 - p: [43, 44]
   k: (
-  l: [QWERTY]
+  l: [QWE]
 - p: [46, 47]
   k: )
-  l: [QWERTY]
+  l: [QWE]
