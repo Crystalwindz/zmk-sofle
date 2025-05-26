@@ -18,7 +18,7 @@
 
 &lt { flavor = "hold-preferred"; };
 
-&mt { quick-tap-ms = <100>; };
+&mt { quick-tap-ms = <150>; };
 
 &mmv {
 };
@@ -160,7 +160,7 @@
 &kp HOME   &kp PAGE_UP    &mkp RCLK   &kp UP      &mkp LCLK  &none                   &mmv MOVE_DOWN   &none                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS         &kp BACKSLASH
 &kp END    &kp PAGE_DOWN  &kp LEFT    &kp DOWN    &kp RIGHT  &kp LC(LEFT_BRACKET)    &mmv MOVE_LEFT   &kp RC(RIGHT_BRACKET)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LSHFT  &none          &kp LC(X)   &kp LC(C)   &kp LC(V)  &none                   &mmv MOVE_RIGHT  &none                  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none             &kp RSHFT
-&mkp MCLK  &none          &kp DELETE  &kp INSERT  &none      &mo 1                   &mkp LCLK        &mo 2                  &none            &kp KP_NUMBER_0  &kp KP_DOT       &none
+&mkp MCLK  &none          &kp DELETE  &kp INSERT  &kp SPACE  &mo 1                   &mkp LCLK        &mo 2                  &kp ENTER        &kp KP_NUMBER_0  &kp KP_DOT       &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -174,7 +174,7 @@
 &kp HOME   &kp PAGE_UP    &mkp RCLK   &kp UP      &mkp LCLK  &none                   &mmv MOVE_DOWN   &none                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS         &kp BACKSLASH
 &kp END    &kp PAGE_DOWN  &kp LEFT    &kp DOWN    &kp RIGHT  &kp LC(LEFT_BRACKET)    &mmv MOVE_LEFT   &kp RC(RIGHT_BRACKET)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LSHFT  &none          &kp LC(X)   &kp LC(C)   &kp LC(V)  &none                   &mmv MOVE_RIGHT  &none                  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none             &kp RSHFT
-&mkp MCLK  &none          &kp DELETE  &kp INSERT  &none      &mo 1                   &mkp LCLK        &mo 2                  &none            &kp KP_NUMBER_0  &kp KP_DOT       &none
+&mkp MCLK  &none          &kp DELETE  &kp INSERT  &kp SPACE  &mo 1                   &mkp LCLK        &mo 2                  &kp ENTER        &kp KP_NUMBER_0  &kp KP_DOT       &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
