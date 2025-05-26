@@ -23,6 +23,9 @@
 &mt {
 };
 
+&mmv {
+};
+
 / {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
