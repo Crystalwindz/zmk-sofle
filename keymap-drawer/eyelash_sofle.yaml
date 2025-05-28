@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-tab$$', h: CTL}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-command$$'}
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   NUM:
@@ -97,9 +97,9 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: 'Ctl+[', s: 'Ctl+{'}
+  - {t: 'Gui+[', s: 'Gui+{'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: 'Ctl+]', s: 'Ctl+}'}
+  - {t: 'Gui+]', s: 'Gui+}'}
   - KP 4
   - KP 5
   - KP 6
@@ -107,9 +107,9 @@ layers:
   - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
+  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -162,9 +162,9 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: 'Ctl+[', s: 'Ctl+{'}
+  - {t: 'Gui+[', s: 'Gui+{'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: 'Ctl+]', s: 'Ctl+}'}
+  - {t: 'Gui+]', s: 'Gui+}'}
   - KP 4
   - KP 5
   - KP 6
@@ -172,9 +172,9 @@ layers:
   - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
+  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
