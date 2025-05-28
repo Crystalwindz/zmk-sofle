@@ -261,10 +261,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
-- p: [4, 5]
+- p: [30, 31]
   k: {h: '-', s: _}
   l: [QWE]
-- p: [7, 8]
+- p: [33, 34]
   k: Sft+-
   l: [QWE]
 - p: [17, 18]
@@ -273,15 +273,15 @@ combos:
 - p: [20, 21]
   k: Sft+]
   l: [QWE]
-- p: [30, 31]
+- p: [43, 44]
   k: {t: '[', s: '{'}
   l: [QWE]
-- p: [33, 34]
+- p: [46, 47]
   k: {t: ']', s: '}'}
   l: [QWE]
-- p: [43, 44]
+- p: [4, 5]
   k: (
   l: [QWE]
-- p: [46, 47]
+- p: [7, 8]
   k: )
   l: [QWE]
