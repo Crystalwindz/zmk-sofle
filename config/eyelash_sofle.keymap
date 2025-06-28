@@ -78,42 +78,42 @@
 
         combo_big_l_bracket {
             bindings = <&kp LS(LEFT_BRACKET)>;
-            key-positions = <17 18>;
+            key-positions = <5 4>;
             layers = <0>;
             timeout-ms = <70>;
         };
 
         combo_big_r_bracket {
             bindings = <&kp RS(RIGHT_BRACKET)>;
-            key-positions = <20 21>;
+            key-positions = <8 7>;
             layers = <0>;
             timeout-ms = <70>;
         };
 
         combo_mid_l_bracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <43 44>;
+            key-positions = <17 18>;
             layers = <0>;
             timeout-ms = <70>;
         };
 
         combo_mid_r_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <46 47>;
+            key-positions = <20 21>;
             layers = <0>;
             timeout-ms = <70>;
         };
 
         combo_small_l_bracket {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <4 5>;
+            key-positions = <43 44>;
             layers = <0>;
             timeout-ms = <70>;
         };
 
         combo_small_r_bracket {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <7 8>;
+            key-positions = <46 47>;
             layers = <0>;
             timeout-ms = <70>;
         };
@@ -151,6 +151,13 @@
             bindings = <&kp LS(M) &kp I &kp K &kp U &kp N2 &kp N2 &kp N2 &kp TILDE>;
             label = "ENTER_PWD";
         };
+
+        switch_input: switch_input {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE)>;
+            label = "SWITCH_INPUT";
+        };
     };
 
     keymap {
@@ -158,11 +165,11 @@
 
         QWE {
             bindings = <
-&esc_grave  &kp N1     &kp N2        &kp N3        &kp N4     &kp N5          &kp UP_ARROW     &kp N6     &kp N7     &kp N8        &kp N9         &kp N0     &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E         &kp R      &kp T           &kp DOWN_ARROW   &kp Y      &kp U      &kp I         &kp O          &kp P      &kp EQUAL
-&kp CAPS    &kp A      &kp S         &kp D         &kp F      &kp G           &kp LEFT_ARROW   &kp H      &kp J      &kp K         &kp L          &kp SEMI   &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V      &kp B           &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA     &kp DOT        &kp FSLH   &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &lt 1 ESCAPE    &kp ENTER        &lt 2 TAB  &kp ENTER  &kp LEFT_GUI  &kp RIGHT_ALT  &kp RCTRL
+&esc_grave     &kp N1     &kp N2        &kp N3        &kp N4     &kp N5          &kp UP_ARROW     &kp N6     &kp N7     &kp N8        &kp N9         &kp N0     &kp BACKSPACE
+&kp TAB        &kp Q      &kp W         &kp E         &kp R      &kp T           &kp DOWN_ARROW   &kp Y      &kp U      &kp I         &kp O          &kp P      &kp EQUAL
+&switch_input  &kp A      &kp S         &kp D         &kp F      &kp G           &kp LEFT_ARROW   &kp H      &kp J      &kp K         &kp L          &kp SEMI   &kp APOS
+&kp LSHFT      &kp Z      &kp X         &kp C         &kp V      &kp B           &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA     &kp DOT        &kp FSLH   &kp RIGHT_SHIFT
+&kp C_MUTE     &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &lt 1 ESCAPE    &kp ENTER        &lt 2 TAB  &kp ENTER  &kp LEFT_GUI  &kp RIGHT_ALT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
